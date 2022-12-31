@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.aboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/text_margin"
+                android:fontFamily="@string/bold"
+                android:text="Knowledge is Power"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/title_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:text="@string/about_collage1"
+            android:textColor="@color/textcolor"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@string/regular"
+            android:textSize="@dimen/text_size1">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_margin="@dimen/text_margin"
+            android:text="Courses"
+            android:textColor="@color/textcolor"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@string/bold"
+            android:textSize="@dimen/title_size"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Courses"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="5dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" Contact details"
+                android:textColor="@color/textcolor"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@string/bold"
+                android:textSize="@dimen/title_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="Dr. D. Y. Patil Collage of engineering and Innovation"
+                android:textColor="@color/textcolor"
+                android:fontFamily="@string/bold"
+                android:textSize="@dimen/text_size1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="Varale,talegaon dabade,Pune 410507"
+                android:textColor="@color/textcolor"
+                android:fontFamily="@string/bold"
+                android:textSize="@dimen/text_size1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/map"
+                android:id="@+id/map1"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
